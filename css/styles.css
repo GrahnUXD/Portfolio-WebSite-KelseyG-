@@ -1,8 +1,98 @@
 /*
 colors used:
 Background color (azure): #F0FFFF or rgb(240,255,255)
-Primary font color (coral): #FF7F50 or rgb(255, 127, 80) 
+Primary font color (coral): #FF7F50 or rgb(255, 127, 80)
 Secondary font color (darkslategrey): #2F4F4F or rgb(47, 79, 79)
 Tertiary font color (floralwhite): #FFFAF0	or rgb(255,250,240)
-:after
 */
+body {
+  background-color: #f0ffff;
+  font-family: 'Noto Serif', serif;
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 1.6;
+  color: #2f4f4f;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 2.75em;
+  font-weight: 700;
+  color: #ff7f50;
+}
+
+h2 {
+  font-size: 2.25em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.75em;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 1.35em;
+  font-weight: 400;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  color: #ff7f50;
+  text-decoration: none; /* No underlining */
+}
+
+a:hover,
+:focus {
+  color: #cc6540;
+  text-decoration: underline; /* Underlining when hovering over a link */
+}
+
+a:active { /* selected link */
+  color: #994c30;
+}
+
+/* keep button class at the bottom of css code so it doesnt get overwritten by less specific rules */
+
+.button {
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #ff7f50;
+  color: #fff; /* needed to override the default link color */
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #994c30; /* width of the border, type, color */
+  transition: 0.2s opacity;
+}
+
+.button:hover {
+  color: #fff;
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+
+.button:active { /* selected link */
+  color: #994c30;
+}
+
+.button.contact {
+  background-color: transparent;
+  color: #ff7f50;
+  text-transform: uppercase;
+  border: 2px solid #ff7f50;
+}
+
+.button.contact:hover {
+  background-color: #ff7f50;
+  color: #fff;
+}
+
