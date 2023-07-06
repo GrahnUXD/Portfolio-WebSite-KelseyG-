@@ -102,3 +102,13 @@ header {
   margin: 10px auto;
   border-bottom: 3px solid #304f2f;
 }
+
+/* Layout Styling */
+
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
