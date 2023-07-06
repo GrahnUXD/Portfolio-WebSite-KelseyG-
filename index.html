@@ -77,21 +77,21 @@
         </header>
         <main>
             <div>
-                <div>
-                    <h1>
+                <div id="hero">
+                    <h1 id="hero-header">
                         Hello! My name is Kelsey Grahn.
                         <span>I am a UX designer in the PNW. </span>
                     </h1>
                     <p>Providing accessibility in excess and putting the FUN into functional product design!</p>
                 </div>
             </div>
-            <div>
+            <div id="my-projects">
                 <div>
                     <h2>My Projects</h2>
                 </div>
                 <div>
                     <div>
-                        <img>
+                        <picture>
                             <source srcset="img/MyTurnity/MyTurnity_logo@1.jpg" media="(max-width:767px)" />
                             <svg width="288" height="289" viewBox="0 0 288 289" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <g filter="url(#filter0_d_2_3)">
@@ -120,7 +120,7 @@
                                 <image id="image1_2_3" width="98" height="88" xlink:href="data:image/png;base64,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"/>
                                 </defs>
                                 </svg>
-                            </img>
+                        </picture>
                     </div>
                     <div>
                         <h3>MyTurnity Experts</h3>
@@ -131,10 +131,10 @@
                 </div>
                 <div>
                     <div>
-                        <img>
+                        <picture>
                             <source srcset="img/GroPro/GroPro_logo@1.jpg" media="(max-width:767px)" />
                             <img src="img/GroPro/GroPro_logo@2.jpg" alt="GroPro Logo" />
-                    </img>
+                        </picture>
                     </div>
                     <div>
                         <h3>Gro Pro Vocab</h3>
