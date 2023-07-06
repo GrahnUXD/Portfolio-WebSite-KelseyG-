@@ -96,3 +96,9 @@ a:active { /* selected link */
   color: #fff;
 }
 
+header {
+  background-color: #2f4f4f;
+  padding: 10px;
+  margin: 10px auto;
+  border-bottom: 3px solid #304F2F;
+}
