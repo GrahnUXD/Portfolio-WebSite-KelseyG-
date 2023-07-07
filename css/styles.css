@@ -26,6 +26,30 @@ main {
   padding-top: 315px;
 }
 
+footer {
+  text-align: center;
+  background-color: #ffe4c4;
+  padding: 10px;
+}
+
+.social {
+  text-align: center;
+}
+
+.social a {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.social svg {
+  width: 50px;
+  height: auto;
+}
+
+#work h2, #hero h1, #hero p {
+  text-align: center;
+}
+
 h1,
 h2,
 h3,
