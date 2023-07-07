@@ -5,6 +5,11 @@ Primary font color (coral): #FF7F50 or rgb(255, 127, 80)
 Secondary font color (darkslategrey): #2F4F4F or rgb(47, 79, 79)
 Tertiary font color (floralwhite): #FFFAF0	or rgb(255,250,240)
 */
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #f0ffff;
   font-family: 'Noto Serif', serif;
@@ -23,7 +28,7 @@ header {
 }
 
 main {
-  padding-top: 315px;
+  padding-top: 195px;
 }
 
 footer {
@@ -34,16 +39,12 @@ footer {
 
 .social {
   text-align: center;
+  padding-top: 30px;
 }
 
 .social a {
   display: inline-block;
   margin: 0 20px;
-}
-
-.social svg {
-  width: 50px;
-  height: auto;
 }
 
 #work h2, #hero h1, #hero p {
@@ -144,7 +145,7 @@ a:active { /* selected link */
 }
 
 .logo {
-  max-width: 250px;
+  max-width: 120px;
 }
 
 nav {
