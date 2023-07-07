@@ -14,6 +14,18 @@ body {
   color: #2f4f4f;
 }
 
+header {
+  background-color: #ffe4c4;
+  padding: 10px 0;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+}
+
+main {
+  padding-top: 315px;
+}
+
 h1,
 h2,
 h3,
@@ -46,6 +58,7 @@ img {
   width: 100%;
 }
 
+/* link styles */
 a {
   color: #ff7f50;
   text-decoration: none; /* No underlining */
@@ -61,7 +74,7 @@ a:active { /* selected link */
   color: #994c30;
 }
 
-/* keep button class at the bottom of css code so it doesnt get overwritten by less specific rules */
+/* button styles - keep button class at the bottom of css code so it doesnt get overwritten by less specific rules */
 
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
@@ -96,14 +109,6 @@ a:active { /* selected link */
   color: #fff;
 }
 
-header {
-  background-color: #ffe4c4;
-  padding: 10px 0;
-  text-align: center;
-  position: fixed;
-  width: 100%;
-}
-
 /* Layout Styling */
 
 .container {
@@ -112,10 +117,6 @@ header {
 
 .row {
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
-}
-
-#hero h1 {
-  text-align: center; /* Centers text */
 }
 
 .logo {
@@ -147,18 +148,16 @@ nav > ul > li > a {
   padding: 20px 0;
   display: inline-block;
   width: 100%;
+  text-align: center; /* Centers text */
 }
 
-.css-box-shadow { /*start ------------*/
-  width: [object Object]px; 
-  height: [object Object]px; 
-  background: #F8F8F8; 
-  border: solid #BDBDBD 1px; 
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
-  -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
-  -moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
+.css-box-shadow {
+  width: [object Object]px;
+  height: [object Object]px;
+  background: #f8f8f8;
+  border: solid #bdbdbd 1px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
 }
 
-main {
-  padding-top: 315px;
-}
