@@ -13,7 +13,7 @@ Tertiary font color (floralwhite): #FFFAF0	or rgb(255,250,240)
 body {
   background-color: #f0ffff;
   font-family: 'Noto Serif', serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 200;
   line-height: 1.6;
   color: #2f4f4f;
@@ -21,14 +21,14 @@ body {
 
 header {
   background-color: #ffe4c4;
-  padding: 10px 0;
-  text-align: center;
+  padding: 20px 0 13px;
+  text-align: unset;
   position: fixed;
   width: 100%;
 }
 
 main {
-  padding-top: 195px;
+  padding-top: 99px;
 }
 
 footer {
@@ -45,10 +45,6 @@ footer {
 .social a {
   display: inline-block;
   margin: 0 20px;
-}
-
-#work h2, #hero h1, #hero p {
-  text-align: center;
 }
 
 h1,
@@ -149,8 +145,9 @@ a:active { /* selected link */
 }
 
 nav {
-  display: inline-block;
-  width: 100%;
+  width: auto;
+  float: right;
+  margin-top: 4px;
 }
 
 nav > ul {
@@ -176,6 +173,10 @@ nav > ul > li > a {
   text-align: center; /* Centers text */
 }
 
+#hero span {
+  display: block;
+}
+
 .css-box-shadow {
   width: [object Object]px;
   height: [object Object]px;
@@ -186,3 +187,44 @@ nav > ul > li > a {
   -moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
 }
 
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  [class*="col-"] {
+    float: left;
+  }  /* dont know what is happening here but it changes the page in a not cool way */
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+}
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
