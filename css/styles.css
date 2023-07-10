@@ -106,6 +106,7 @@ a:active { /* selected link */
   border-radius: 3px;
   border-bottom: 2px solid #994c30; /* width of the border, type, color */
   transition: 0.2s opacity;
+  transition-property: opacity;
 }
 
 .button:hover {
@@ -171,7 +172,7 @@ nav > ul > li {
 nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 #hero {
@@ -186,26 +187,102 @@ nav > ul > li > a {
   display: block;
 }
 
+.skills-tools {
+  padding-left: 35px;
+}
+
 .css-box-shadow {
-  background: #f8f8f8;
-  border: solid #bdbdbd 1px;
+  background: #ffe4c4;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
 }
 
-.col-md-1 {width: 8.33%;}
-  .col-sm-2 {width: 16.66%;}
-  .col-sm-3 {width: 25%;}
-  .col-sm-4 {width: 33.33%;}
-  .col-sm-5 {width: 41.66%;}
-  .col-sm-6 {width: 50%;}
-  .col-sm-7 {width: 58.33%;}
-  .col-sm-8 {width: 66.66%;}
-  .col-sm-9 {width: 75%;}
-  .col-sm-10 {width: 83.33%;}
-  .col-sm-11 {width: 91.66%;}
-  .col-sm-12 {width: 100%;}
+/* Practice with flexbox */
+
+.container .nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* .navigation {
+  display: flex;
+  justify-content: flex-start;
+} */
+
+/* Practice with transitions */
+
+/* transition: [transition-property][transition-duration]
+  [transition-timing-function][transition-delay]; */
+
+/* Practice with animation */
+
+.animation-exampl {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+@keyframes color-change {
+  from { fill: #edc655; }
+  to { fill: #f76414; }
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from { transform: translate(0, 50px); }
+  to { transform: translate(200px, 50px); }
+}
+
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+/* Short hand code for above
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+} */
+
+@keyframes cloud-move-reverse {
+  from { transform: translate(446px, 48px); }
+  to { transform: translate(100px, 48px); }
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+/* media devices small (320px and larger) */
+@media only screen and (min-width: 320px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px
+  }
+
+  main {
+    padding-top: 175px;
+  }
+
+  .col-md-1 { width: 8.33%; }
+  .col-sm-2 { width: 16.66%; }
+  .col-sm-3 { width: 25%; }
+  .col-sm-4 { width: 33.33%; }
+  .col-sm-5 { width: 41.66%; }
+  .col-sm-6 { width: 50%; }
+  .col-sm-7 { width: 58.33%; }
+  .col-sm-8 { width: 66.66%; }
+  .col-sm-9 { width: 75%; }
+  .col-sm-10 { width: 83.33%; }
+  .col-sm-11 { width: 91.66%; }
+  .col-sm-12 { width: 100%; }
+}
 
 /* ==============================
 Medium devices (640px and larger)
@@ -213,7 +290,7 @@ Medium devices (640px and larger)
 @media only screen and (min-width: 640px) {
   header {
     text-align: unset;
-    padding: 20px 0 13px;
+    padding: 20px 0 13px
   }
 
   nav {
@@ -222,18 +299,18 @@ Medium devices (640px and larger)
     margin-top: 4px;
   }
 
-  .col-md-1 {width: 8.33%;}
-  .col-md-2 {width: 16.66%;}
-  .col-md-3 {width: 25%;}
-  .col-md-4 {width: 33.33%;}
-  .col-md-5 {width: 41.66%;}
-  .col-md-6 {width: 50%;}
-  .col-md-7 {width: 58.33%;}
-  .col-md-8 {width: 66.66%;}
-  .col-md-9 {width: 75%;}
-  .col-md-10 {width: 83.33%;}
-  .col-md-11 {width: 91.66%;}
-  .col-md-12 {width: 100%;}
+  .col-md-1 { width: 8.33%; }
+  .col-md-2 { width: 16.66%; }
+  .col-md-3 { width: 25%; }
+  .col-md-4 { width: 33.33%; }
+  .col-md-5 { width: 41.66%; }
+  .col-md-6 { width: 50%; }
+  .col-md-7 { width: 58.33%; }
+  .col-md-8 { width: 66.66%; }
+  .col-md-9 { width: 75%; }
+  .col-md-10 { width: 83.33%; }
+  .col-md-11 { width: 91.66%; }
+  .col-md-12 { width: 100%; }
 
   [class*="col-"] {
     float: left;
@@ -244,23 +321,23 @@ Medium devices (640px and larger)
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+  .col-lg-1 { width: 8.33%; }
+  .col-lg-2 { width: 16.66%; }
+  .col-lg-3 { width: 25%; }
+  .col-lg-4 { width: 33.33%; }
+  .col-lg-5 { width: 41.66%; }
+  .col-lg-6 { width: 50%; }
+  .col-lg-7 { width: 58.33%; }
+  .col-lg-8 { width: 66.66%; }
+  .col-lg-9 { width: 75%; }
+  .col-lg-10 { width: 83.33%; }
+  .col-lg-11 { width: 91.66%; }
+  .col-lg-12 { width: 100%; }
 }
-
-  .col-lg-1 {width: 8.33%;}
-  .col-lg-2 {width: 16.66%;}
-  .col-lg-3 {width: 25%;}
-  .col-lg-4 {width: 33.33%;}
-  .col-lg-5 {width: 41.66%;}
-  .col-lg-6 {width: 50%;}
-  .col-lg-7 {width: 58.33%;}
-  .col-lg-8 {width: 66.66%;}
-  .col-lg-9 {width: 75%;}
-  .col-lg-10 {width: 83.33%;}
-  .col-lg-11 {width: 91.66%;}
-  .col-lg-12 {width: 100%;}
 
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
-@media only screen and (min-width: 1440px) {
-}
+
+/* @media only screen and (min-width: 1440px) {
+} */
