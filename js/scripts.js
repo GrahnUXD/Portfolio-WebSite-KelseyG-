@@ -1,2 +1,1 @@
-var console
-console.log('So glad you are here!')
+console.log("So glad you are here!")

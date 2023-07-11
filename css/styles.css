@@ -173,6 +173,7 @@ nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 400;
+  font-size: 16px;
 }
 
 #hero {
@@ -267,7 +268,7 @@ nav > ul > li > a {
   }
 
   main {
-    padding-top: 175px;
+    padding-top: 145px;
   }
 
   .col-md-1 { width: 8.33%; }
