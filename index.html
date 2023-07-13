@@ -11,22 +11,26 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@200;400;700&display=swap" rel="stylesheet" />
+        <i class="fa-solid fa-bars" style="color: #263e0f;"></i>    
     </head>
 
     <body>
         <header class="css-box-shadow">
             <div class="container">
-                <picture>
-                    <source srcset="img/logo/kglogo.svg" media="(max-width:767px)" />
-                    <img class="logo" src="img/logo/kglogo.svg" alt="Oregon shaped personal logo" />
-                </picture>
-                <nav>
-                    <ul class="navigation">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Me</a></li>
-                        <li><a href="#contact">Contact Me</a></li>
-                    </ul>
-                </nav>
+                <div class="navtoggle" id="myNavtoggle" >
+                    <picture>
+                        <source srcset="img/logo/kglogo.svg" media="(max-width:767px)" />
+                        <img class="logo" src="img/logo/kglogo.svg" alt="Oregon shaped personal logo" />
+                    </picture>
+                    <nav>
+                        <ul class="navigation">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Me</a></li>
+                            <li><a href="#contact">Contact Me</a></li>
+                            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fa-solid fa-bars"></i></a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </header>
         <main>
@@ -671,7 +675,8 @@
                                         </g>
                                         <path fill="#1A232C" d="M55.253 470.489L55.253 410.403C55.253 409.85 54.805 409.403 54.253 409.403 53.701 409.403 53.253 409.85 53.253 410.403L53.253 470.489C53.253 471.041 53.701 471.489 54.253 471.489 54.805 471.489 55.253 471.041 55.253 470.489M50.889 340.95L65.312 340.95C65.865 340.95 66.312 340.502 66.312 339.95 66.312 339.397 65.865 338.95 65.312 338.95L50.889 338.95C50.336 338.95 49.889 339.397 49.889 339.95 49.889 340.502 50.336 340.95 50.889 340.95"></path>
                                     </g>
-                                </svg>                            </picture>
+                                </svg>                            
+                            </picture>
                         </div>
                         <div class="col-md-6 col-lg-8">
                             <h3>New Project</h3>
@@ -723,6 +728,7 @@
                 <p>Copyright Kelsey_Grahn 2023</p>
             </div>
         </footer>
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js"   integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="   crossorigin="anonymous"></script>
         <script src="js/scripts.js"></script>
     </body>
 </html>

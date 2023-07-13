@@ -55,10 +55,10 @@ h4 {
 }
 
 h1 {
-
   font-size: 2.75em;
   font-weight: 700;
   color: #ff7f50;
+  padding-top: 100px;
 }
 
 h2 {
@@ -157,7 +157,7 @@ a:active { /* selected link */
 }
 
 .logo {
-  max-width: 120px;
+  max-width: 150px;
 }
 
 nav {
@@ -340,6 +340,11 @@ Large devices (1024px or larger)
   .col-lg-10 { width: 83.33%; }
   .col-lg-11 { width: 91.66%; }
   .col-lg-12 { width: 100%; }
+
+  .logo {
+    min-width: 200px;
+    text-align: left;
+  }
 }
 
 /* ==============================
