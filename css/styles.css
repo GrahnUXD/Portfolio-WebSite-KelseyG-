@@ -214,6 +214,30 @@ nav > ul > li > a {
   padding-right: 15px;
 }
 
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+  display:block;
+  float: none;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+
 /* Practice with flexbox */
 
 .container .nav {
@@ -331,26 +355,16 @@ Medium devices (640px and larger)
     display: none;
   }
 
-  .navtoggle, .navtoggle.responsive {
-    position: relative;
-  }
-
-  .navtoggle.responsive li  {
-    display: block;
-  }
-
   .navtoggle.responsive nav {
     padding: 24px 0 0;
-  }
-
-  .navtoggle.responsive li  {
     display: block;
-    padding: 10px 0;
-    border-top: 1px solid rgba(255,127,80,0.5);
+    float: right;
   }
 
-  .navtoggle.responsive li:last-child  {
-    padding: 0 0 10px;
+  .navtoggle.responsive li {
+    display: inline-block;
+    padding: 0;
+    border-top: 0;
   }
 
   .col-md-1 { width: 8.33%; }
