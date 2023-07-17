@@ -6,6 +6,7 @@ Secondary font color (darkslategrey): #2F4F4F or rgb(47, 79, 79)
 Tertiary font color (floralwhite): #FFFAF0	or rgb(255,250,240)
 */
 
+/* ::::::::::::::::::::::::: GENERAL STYLES */
 * {
   box-sizing: border-box;
 }
@@ -18,6 +19,23 @@ body {
   line-height: 1.6;
   color: #2f4f4f;
 }
+
+/* ::::::::::::::::::::::::: TYPOGRAPHY (headings, links, paragraph, lists, tables) */
+
+
+/* ::::::::::::::::::::::::: GLOBAL ELEMENTS (buttons) */
+
+
+/* ::::::::::::::::::::::::: GLOBAL COMPONENTS (header, footer) */
+/* ::::::::::::::::::::::::: GLOBAL Selectors (Specific class names -- row, container, column "grid stuff") */
+
+/* ::::::::::::::::::::::::: ANIMATIONS */
+
+
+/* ::::::::::::::::::::::::: PAGE SPECIFIC STYLES (Styles that apply to only one page) */
+
+
+/* ::::::::::::::::::::::::: MEDIA QUERIES */
 
 header {
   background-color: #ffe4c4;
@@ -35,16 +53,6 @@ footer {
   text-align: center;
   background-color: #ffe4c4;
   padding: 10px;
-}
-
-.social {
-  text-align: center;
-  padding-top: 30px;
-}
-
-.social a {
-  display: inline-block;
-  margin: 0 20px;
 }
 
 h1,
@@ -137,6 +145,16 @@ a:active { /* selected link */
   color: #fff;
 }
 
+.social {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.social a {
+  display: inline-block;
+  margin: 0 20px;
+}
+
 /* Layout Styling */
 
 .container {
@@ -179,6 +197,8 @@ nav > ul > li > a {
   font-size: 16px;
 }
 
+/* homepage styles */
+
 #hero {
   background-color: #ffe4c4;
   padding: 0px 0;
@@ -191,9 +211,13 @@ nav > ul > li > a {
   display: block;
 }
 
+/* About styles */
+
 .skills-tools {
   padding-left: 35px;
 }
+
+/* Header styles */
 
 .css-box-shadow {
   background: #ffe4c4;
@@ -201,6 +225,8 @@ nav > ul > li > a {
   -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
 }
+
+/* Navigation stuff */
 
 .navtoggle li:not(:last-child) {
   display: none;
@@ -214,27 +240,28 @@ nav > ul > li > a {
   padding-right: 15px;
 }
 
-.navtoggle, .navtoggle.responsive {
+.navtoggle,
+.navtoggle.responsive {
   position: relative;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
 }
 
 .navtoggle.responsive nav {
   padding: 24px 0 0;
-  display:block;
+  display: block;
   float: none;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
   padding: 10px 0;
   border-top: 1px solid rgba(255,127,80,0.5);
 }
 
-.navtoggle.responsive li:last-child  {
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
 
