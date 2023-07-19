@@ -22,18 +22,15 @@ body {
 
 /* ::::::::::::::::::::::::: TYPOGRAPHY (headings, links, paragraph, lists, tables) */
 
-
 /* ::::::::::::::::::::::::: GLOBAL ELEMENTS (buttons) */
 
-
 /* ::::::::::::::::::::::::: GLOBAL COMPONENTS (header, footer) */
+
 /* ::::::::::::::::::::::::: GLOBAL Selectors (Specific class names -- row, container, column "grid stuff") */
 
 /* ::::::::::::::::::::::::: ANIMATIONS */
 
-
 /* ::::::::::::::::::::::::: PAGE SPECIFIC STYLES (Styles that apply to only one page) */
-
 
 /* ::::::::::::::::::::::::: MEDIA QUERIES */
 
@@ -114,7 +111,7 @@ a:active { /* selected link */
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #ff7f50;
-  color: #fff; /* needed to override the default link color */
+  color: #3a3a3a; /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
@@ -201,7 +198,7 @@ nav > ul > li > a {
 
 #hero {
   background-color: #ffe4c4;
-  padding: 0px 0;
+  padding: 0;
   display: inline-block;
   width: 100%;
   text-align: center; /* Centers text */
@@ -258,7 +255,7 @@ nav > ul > li > a {
 .navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid rgba(255,127,80,0.5);
+  border-top: 1px solid rgba(255, 127, 80, 0.5);
 }
 
 .navtoggle.responsive li:last-child {
@@ -415,8 +412,7 @@ Medium devices (640px and larger)
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
-@media only screen and (min-width: 1024px) 
-{
+@media only screen and (min-width: 1024px) {
   .col-lg-1 { width: 8.33%; }
   .col-lg-2 { width: 16.66%; }
   .col-lg-3 { width: 25%; }
